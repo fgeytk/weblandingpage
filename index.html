@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Page d'accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <header>
+    <!-- Barre de navigation -->
+    <div >
+        <input id="boutton1" class="themebutton" type="button" value="Theme Matin" onclick="theme1()">
+        <input id="boutton2" class="themebutton" type="button" value="Theme Soir" onclick="theme2()">
+        <div id="clock"> 
+        </div>
+    </div>
+    <div id="divrandom">
+        <input id="random" type="button" value="Randomizer" onclick="randombackground()" />
+    </div>
+    </header>
+ 
+    <h1>Welcome</h1>
+
+    <!-- Widget météo -->
+    <div id="idd4bdd823afb2" a='{"t":"g7bs","v":"1.2","lang":"fr","locs":[],"ssot":"c","sics":"ds","cbkg":"rgba(255,255,255,0)","cfnt":"rgb(0,0,0)","cend":"rgba(0,0,0,0)"}'> // erreur w3c 
+      <a href="https://meteolabs.fr/widgets/">Widget Météo HTML</a> pour site Web par meteolabs.fr
+    </div>
+    <script async src="https://static1.meteolabs.fr/widgetjs/?id=idd4bdd823afb2">
+    </script>
+    
+    <!-- Barre de recherche google avec https://programmablesearchengine.google.com/ ; amelioration:https://www.youtube.com/watch?v=CbDcq_vhNCc&ab_channel=MichaelBreitung-->
+    <script src="https://cse.google.com/cse.js?cx=35a45d33fd79a4216">
+    </script>
+    <div class="gcse-search"></div>
+    
+    <!-- Raccourci -->
+    <div id="shortcuts">
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="image/pngegg.png" alt="YouTube" width="100" height="75">
+        </a>
+        <a href="https://www.myges.fr" target="_blank">
+            <img src="image/10801_c2be0c8ff27074343b8218c3b01bb3d0.png" alt="MyGES" width="100" height="75">
+        </a>
+    </div>
+    <footer>
+        <a href="apropos.html">À propos</a>
+    </footer>
+    
+</body>
+</html>
